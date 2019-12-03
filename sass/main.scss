@@ -1,7 +1,20 @@
 @import '_vars';
 @import './modules/_hero';
 @import './modules/_nav';
+@import './modules/slider';
+
+body {
+    background: #1e1e1e;
+}
 
 a:hover {
     color: $white;
+}
+
+a:visited {
+    color: $white;
+}
+
+#projects {
+    margin-top: 50px;
 }
