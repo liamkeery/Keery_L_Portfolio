@@ -70,18 +70,18 @@
         class="strike">if you're lucky</span>.</p>
     <hr>
 
-    <form>
+    <form id="contact-form">
       <div class="grid-container">
         <div class="grid-x grid-padding-x">
           <div class="small-6 cell contact">
             <input type="text" placeholder="Your Name" class="form-input"
-              required>
+              required name="name">
 
-            <input type="text" placeholder="Your Email" class="form-input"
-              required>
+            <input type="email" placeholder="Your Email" class="form-input"
+              required name="usermail">
 
             <textarea rows="4" cols="50" placeholder="Your Message"
-              class="form-input" required></textarea>
+              class="form-input" name="message" required id="user-message"></textarea>
 
             <button type="submit" class="submit">Submit</button>
           </div>
