@@ -21,6 +21,8 @@
         }
 
         let url = `/mail`;
+        let msgArea = document.querySelector('.success');
+        let errorMsg = document.querySelector('.error');
 
         // use the POST superglobal which is more secure than GET, and hit the /mail route in index.js
         // inside the routes folder. this will take in the formdata we're sending, and use that to send our email
@@ -42,12 +44,12 @@
                     // we successfully sent an email via gmail and nodemailer!
                     // flash success here, reset the form
                     form.reset();
-                    alert("email was sent!"); // DO NOT use alerts. they are so hacky and gross.
+                    msgArea.textContent = `Success! Thanks for reaching out.`;
                 }
             }) // this will be a success or fail message from the server
             .catch((err) => console.log(err));
 
-        console.log('tried sending mail');
+            errorMsg.textContent = `Error! Sorry, we could not send your message.`;
     }
 
     form.addEventListener('submit', handleMail)
