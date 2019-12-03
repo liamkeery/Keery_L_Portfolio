@@ -16,7 +16,10 @@
 
 #projects {
     background: $dark-grey;
-    height: 1024px;
+    height: 800px;
+    -webkit-box-shadow: 0px 11px 7px -2px rgba(179,179,179,1);
+    -moz-box-shadow: 0px 11px 7px -2px rgba(179,179,179,1);
+    box-shadow: 0px 11px 7px -2px rgba(179,179,179,1);
 }
 
 .orbit-bullets button.is-active {
