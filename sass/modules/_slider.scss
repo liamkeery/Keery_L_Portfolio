@@ -49,12 +49,14 @@
     h1 {
         color: $white;
         margin-top: 100px;
+        font-family: $montserrat;
     }
     
     h2 {
         font-family: $roboto;
         color: $white;
         font-size: 1.5rem;
+        margin-top: 20px;
     }
 
     h3 {
@@ -66,12 +68,33 @@
     p {
         font-family: $montserrat;
         color: $white;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
+    }
+
+    .icons {
+        font-family: $montserrat;
+        color: $white;
+        margin-bottom: 40px;
+        margin-top: 30px;
     }
 }
 
 .projectImg {
     max-width: 300px;
+}
+
+.mockup {
+    max-width: 500px;
+    margin-top: 130px;
+}
+
+#motion {
+    .motion-heading {
+        text-align: center;
+        color: $white;
+        margin-top: 30px;
+        font-family: $montserrat;
+    }
 }
 
 @media screen and (max-width: 39.9375em) {
