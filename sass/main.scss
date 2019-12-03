@@ -1,1 +1,7 @@
 @import '_vars';
+@import './modules/_hero';
+@import './modules/_nav';
+
+a:hover {
+    color: $white;
+}

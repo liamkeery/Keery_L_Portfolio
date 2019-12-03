@@ -1,0 +1,43 @@
+@import '_vars';
+
+.menu {
+    font-family: $montserrat;
+    color: $white;
+    background: transparent;
+
+    li {
+        margin-right: 15px;
+    }
+}
+
+.top-bar {
+    margin-top: 25px;
+    background: transparent;
+    height: 70px;
+}
+
+.top-bar-right {
+    margin-right: 25px;
+}
+
+.title-bar {
+    background: transparent;
+    height: 70px;
+}
+
+.top-bar ul {
+    background: transparent;
+}
+
+.menu a {
+    color: $white;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    text-decoration-color: #D8AA19;
+    color: $white;
+}
+
+
+
