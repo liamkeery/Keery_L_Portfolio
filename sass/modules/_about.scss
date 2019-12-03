@@ -54,3 +54,11 @@ form {
 ::placeholder {
     color: #525252;
 }
+
+.submit {
+    border-radius: 15px;
+    background: #1e1e1e;
+    color: $white;
+    font-family: $montserrat;
+    padding: 15px;
+}
