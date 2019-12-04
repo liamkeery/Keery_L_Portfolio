@@ -12,9 +12,11 @@
     background: rgba(0,0,0,0.5);
 }
 
+// Modal content styles
+
 .modal-content {
     margin: 5% auto;
-    background: #f4f4f4;
+    background: #000000;
     padding: 20px;
     width: 80%;
 }
@@ -25,3 +27,34 @@
     font-size: 30px;
     cursor: pointer;
 }
+
+.title {
+    font-family: $montserrat;
+    text-align: center;
+    margin-bottom: 30px;
+    color: $white;
+}
+
+.desc-text {
+    font-family: $roboto;
+    font-size: 1.5rem;
+    text-align: center;
+    color: $white;
+}
+
+.task {
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-family: $montserrat;
+    padding-top: 40px;
+    color: $white;
+}
+
+.modal-img {
+    margin-top: 30px;
+}
+
+
+

@@ -5,17 +5,32 @@
     const viewButtons = document.querySelectorAll('.call-to-action');
     const modal = document.querySelector('#project-modal');
     const close = document.querySelector('.close');
+    const projectImg = modal.querySelector('.modal-img');
+    
 
     function showModal(projectData, el) {
-        modal.querySelector(".title").textContent = `${projectData.title}`;
-        modal.querySelector(".team").textContent = `TEAM: ${projectData.team}`;
-        modal.querySelector(".discipline").textContent = `DISCIPLINE: ${projectData.discipline}`;
-        modal.querySelector(".stack").textContent = `STACK: ${projectData.stack}`;
-        modal.querySelector(".libraries").textContent = `LIBRARIES: ${projectData.libraries}`;
-        modal.querySelector(".software").textContent = `SOFTWARE: ${projectData.software}`;
-        modal.querySelector(".task").textContent = `${projectData.task}`;
+
+        const disableBodyScroll = bodyScrollLock.disableBodyScroll;
+        
+
+            modal.querySelector(".title").innerHTML = `${projectData.title}`;
+            modal.querySelector(".team").innerHTML = `<b>TEAM: </b> ${projectData.team}`;
+            modal.querySelector(".discipline").innerHTML = `<b>DISCIPLINE:</b> ${projectData.discipline}`;
+            modal.querySelector(".stack").innerHTML = `<b>STACK: </b> ${projectData.stack}`;
+            modal.querySelector(".libraries").innerHTML = `<b>LIBRARIES: </b> ${projectData.libraries}`;
+            modal.querySelector(".software").innerHTML = `<b>SOFTWARE: </b> ${projectData.software}`;
+            modal.querySelector(".task").innerHTML = `${projectData.task}`;
+
+            projectImg.src = `images/${projectData.img}`;
 
         modal.classList.remove('hide');
+        disableBodyScroll(modal);
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.classList.add('hide');
+            }
+          }
   }
 
     function fetchData() {
@@ -25,15 +40,16 @@
         fetch(url)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
-
+            
             showModal(data, targetEl);
         })
         .catch((err) => console.log(err));
     }
 
     function closeModal() {
+        const enableBodyScroll = bodyScrollLock.enableBodyScroll;
         modal.classList.add('hide');
+        enableBodyScroll(modal);
     }
 
     function handleMail(event) {
