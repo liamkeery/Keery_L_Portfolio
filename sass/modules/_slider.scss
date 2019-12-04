@@ -29,6 +29,10 @@
     height: 600px;
 }
 
+.orbit-container:focus {
+    outline: none;
+}
+
 .column-left {
     border-right: 2px solid #D8AA19;
     width: 50%;
@@ -96,6 +100,8 @@
         font-family: $montserrat;
     }
 }
+
+
 
 @media screen and (max-width: 39.9375em) {
     .column-left {

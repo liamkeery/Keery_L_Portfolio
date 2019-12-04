@@ -1,6 +1,7 @@
 <div class="grid-x" id="projects">
   <div class="cell">
-    <div class="orbit" role="region" aria-label="Projects" data-orbit>
+    <object type="image/svg+xml" data="images/ux.svg"></object>
+    <div class="orbit" role="region" aria-label="Projects" data-orbit data-auto-play="false">
       <ul class="orbit-container">
         <button class="orbit-previous" aria-label="previous"><span
             class="show-for-sr">Previous Slide</span>&#9664;</button>
@@ -12,7 +13,7 @@
             <h2>WEB DEVELOPMENT / UX DESIGN</h2>
             <h3>PERSONAL PROJECT</h3>
             <p class="icons"><i class="devicon-illustrator-plain"></i><i class="devicon-nodejs-plain"></i><i class="devicon-express-original"></i><i class="devicon-mysql-plain-wordmark"></i><i class="devicon-sass-original"></i><i class="devicon-html5-plain-wordmark"></i></p>
-            <a class="call-to-action" href="#">View Case Study</a>
+            <span class="call-to-action" data-target="1">View Case Study</span>
           </div>
           <div class="column-right hide-for-small-only">
             <img class="mockup" src="images/spotify-mockup.png" alt="Spotify">
@@ -24,7 +25,7 @@
             <h2>UX/UI / DIGITAL MARKETING</h2>
             <h3>TEAM PROJECT</h3>
             <p class="icons"><i class="devicon-photoshop-plain"></i></p>
-            <a class="call-to-action" href="#">View Case Study</a>
+            <span class="call-to-action" data-target="2">View Case Study</span>
           </div>
           <div class="column-right hide-for-small-only">
             <img class="mockup" src="images/organ-mockup.png" alt="Spotify">
@@ -36,7 +37,7 @@
             <h2>USER INTERFACE DESIGN</h2>
             <h3>PERSONAL PROJECT</h3>
             <p class="icons"><img src="images/sketch.svg" alt="Sketch"></p>
-            <a class="call-to-action" href="#">View Case Study</a>
+            <span class="call-to-action" data-target="3">View Case Study</span>
           </div>
           <div class="column-right hide-for-small-only">
             <img class="projectImg" src="images/peak-mockup.png" alt="Peak">
@@ -93,4 +94,18 @@
       
     </form>
   </div>
+  
+  <div id="project-modal" class="modal hide">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1 class="title"></h1>
+      <p class="team"></p>
+      <p class="discipline"></p>
+      <p class="stack"></p>
+      <p class="libraries"></p>
+      <p class="software"></p>
+      <p class="task"></p>
+    </div>
+  </div>
+
 </div>

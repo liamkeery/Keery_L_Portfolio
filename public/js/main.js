@@ -2,8 +2,39 @@
     console.log('Connected!')
 
     const form = document.querySelector('#contact-form'), submit = form.querySelector('.submit');
+    const viewButtons = document.querySelectorAll('.call-to-action');
+    const modal = document.querySelector('#project-modal');
+    const close = document.querySelector('.close');
 
-    console.log(form);
+    function showModal(projectData, el) {
+        modal.querySelector(".title").textContent = `${projectData.title}`;
+        modal.querySelector(".team").textContent = `TEAM: ${projectData.team}`;
+        modal.querySelector(".discipline").textContent = `DISCIPLINE: ${projectData.discipline}`;
+        modal.querySelector(".stack").textContent = `STACK: ${projectData.stack}`;
+        modal.querySelector(".libraries").textContent = `LIBRARIES: ${projectData.libraries}`;
+        modal.querySelector(".software").textContent = `SOFTWARE: ${projectData.software}`;
+        modal.querySelector(".task").textContent = `${projectData.task}`;
+
+        modal.classList.remove('hide');
+  }
+
+    function fetchData() {
+        let targetEl = this,
+        url = `/project/${this.dataset.target}`;
+
+        fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+
+            showModal(data, targetEl);
+        })
+        .catch((err) => console.log(err));
+    }
+
+    function closeModal() {
+        modal.classList.add('hide');
+    }
 
     function handleMail(event) {
         event.preventDefault();
@@ -53,4 +84,6 @@
     }
 
     form.addEventListener('submit', handleMail)
+    viewButtons.forEach(button => button.addEventListener('click', fetchData));
+    close.addEventListener('click', closeModal);
 })();
