@@ -1,0 +1,71 @@
+@import '_vars';
+
+$hero-full-screen-bg: url('../images/bg.png') center center no-repeat;
+$hero-full-screen-bg-size: cover;
+$hero-full-screen-text-color: $white;
+
+.hero-full-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: $hero-full-screen-bg;
+  background-size: $hero-full-screen-bg-size;
+
+  .middle-content-section {
+    text-align: center;
+    color: $hero-full-screen-text-color;
+  }
+
+  .top-content-section {
+    width: 100%;
+  }
+
+  .bottom-content-section {
+    padding: 1rem;
+
+    svg {
+      height: 50px;
+      width: 50px;
+      fill: $hero-full-screen-text-color;
+    }
+  }
+}
+
+.top-bar-left {
+    margin-left: 25px;
+}
+
+.logo-small {
+    margin: 25px;
+    padding-top: 50px;
+}
+
+.hello {
+    font-size: 4rem;
+    font-family: $montserrat;
+}
+
+.tagline {
+    font-size: 2rem;
+    font-family: $montserrat;
+    color: white;
+    margin-bottom: 100px;
+}
+
+.typer {
+    color: white;
+    font-family: $montserrat;
+}
+
+.call-to-action {
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 15px;
+    padding: 15px;
+    color: $white;
+    font-family: $montserrat;
+    cursor: pointer;
+}
+

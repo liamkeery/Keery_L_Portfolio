@@ -1,0 +1,70 @@
+@import '_vars';
+
+#about {
+    background: white;
+
+    hr {
+        border: 2px solid #D8AA19;
+        width: 40%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: $roboto;
+        margin-top: 80px;
+    }
+
+    .about-text {
+        font-family: $montserrat;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .contact-text {
+        text-align: center;
+        font-family: $montserrat;
+    }
+
+    h2 {
+        font-family: $roboto;
+        text-align: center;
+    }
+}
+
+form {
+    text-align: center;
+}
+
+.headshot {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 200px;
+    padding-bottom: 20px;
+}
+
+.contact {
+    margin: 0 auto;
+}
+
+.form-input {
+    border-radius: 15px; 
+    padding: 15px;
+    height: 40px;
+    background: #f6f6f6;
+}
+
+::placeholder {
+    color: #525252;
+}
+
+.submit {
+    border-radius: 15px;
+    background: #1e1e1e;
+    color: $white;
+    font-family: $montserrat;
+    padding: 15px;
+    margin-bottom: 20px;
+}

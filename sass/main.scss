@@ -1,0 +1,44 @@
+@import '_vars';
+@import './modules/_hero';
+@import './modules/_nav';
+@import './modules/slider';
+@import './modules/_about';
+@import './modules/_footer';
+@import './modules/modal';
+
+body {
+    background: #1e1e1e;
+}
+
+a:hover {
+    color: $white;
+}
+
+a:visited {
+    color: $white;
+}
+
+#projects {
+    margin-top: 50px;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+i {
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.success {
+    color: green;
+    text-align: center;
+    font-family: $montserrat;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-family: $montserrat;
+}

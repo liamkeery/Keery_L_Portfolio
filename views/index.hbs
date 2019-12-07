@@ -1,2 +1,125 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<div class="grid-x" id="projects">
+  <div class="cell">
+    <object type="image/svg+xml" data="images/ux.svg"></object>
+    <div class="orbit" role="region" aria-label="Projects" data-orbit
+      data-auto-play="false">
+      <ul class="orbit-container">
+        <button class="orbit-previous" aria-label="previous"><span
+            class="show-for-sr">Previous Slide</span>&#9664;</button>
+        <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next
+            Slide</span>&#9654;</button>
+        <li class="orbit-slide">
+          <div class="column-left">
+            <h1>Spotify Infographic</h1>
+            <h2>WEB DEVELOPMENT / UX DESIGN</h2>
+            <h3>PERSONAL PROJECT</h3>
+            <p class="icons"><i class="devicon-illustrator-plain"></i><i
+                class="devicon-nodejs-plain"></i><i
+                class="devicon-express-original"></i><i
+                class="devicon-mysql-plain-wordmark"></i><i
+                class="devicon-sass-original"></i><i
+                class="devicon-html5-plain-wordmark"></i></p>
+            <span class="call-to-action" data-target="1">View Case Study</span>
+          </div>
+          <div class="column-right hide-for-small-only">
+            <img class="mockup" src="images/spotify-mockup.png" alt="Spotify">
+          </div>
+        </li>
+        <li class="orbit-slide">
+          <div class="column-left">
+            <h1>Organ Donor Campaign</h1>
+            <h2>UX/UI / DIGITAL MARKETING</h2>
+            <h3>TEAM PROJECT</h3>
+            <p class="icons"><i class="devicon-photoshop-plain"></i></p>
+            <span class="call-to-action" data-target="2">View Case Study</span>
+          </div>
+          <div class="column-right hide-for-small-only">
+            <img class="mockup" src="images/organ-mockup.png" alt="Spotify">
+          </div>
+        </li>
+        <li class="orbit-slide cell small-6 columns">
+          <div class="column-left">
+            <h1>PEAK</h1>
+            <h2>USER INTERFACE DESIGN</h2>
+            <h3>PERSONAL PROJECT</h3>
+            <p class="icons"><img src="images/sketch.svg" alt="Sketch"></p>
+            <span class="call-to-action" data-target="3">View Case Study</span>
+          </div>
+          <div class="column-right hide-for-small-only">
+            <img class="projectImg" src="images/peak-mockup.png" alt="Peak">
+          </div>
+        </li>
+        <li class="orbit-slide" id="motion">
+          <h1 class="motion-heading">MOTION DESIGN REEL</h1>        
+            <video controls>
+              <source src="video/motion-reel.mp4" type="video/mp4">
+              <source src="video/motion-reel.ogg" type="video/ogg">
+              <source src="video/motion-reel.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+        </li>
+      </ul>
+      <nav class="orbit-bullets">
+        <button class="is-active" data-slide="0"><span class="show-for-sr">First
+            slide details.</span><span class="show-for-sr">Current Slide</span></button>
+        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="grid-x" id="about">
+  <div class="cell large-6 columns">
+    <img class="headshot" src="images/headshot.svg" alt="Liam">
+    <h2>Hi, I'm Liam.</h2>
+    <hr>
+    <p class="about-text">I'm a 4th year Interactive Media Design student at
+      Fanshawe College. Whether it's Product Design, Web Development, Graphics
+      Design, or even Photography. I've got you covered for your next project.
+      Please do not hesitate to reach out!</p>
+  </div>
+  <div class="cell large-6 columns">
+    <h1>Let's Build Something Great</h1>
+    <p class="contact-text">This handy form below will put you in contact with
+      me.<br>I'll be sure to get back to you within 24 hours, <span
+        class="strike">if you're lucky</span>.</p>
+    <hr>
+
+    <form id="contact-form">
+
+      <div class="grid-x grid-padding-x">
+        <div class="small-6 cell contact">
+
+          <input type="text" placeholder="Your Name" class="form-input"
+            required name="name">
+
+          <input type="email" placeholder="Your Email" class="form-input"
+            required name="usermail">
+
+          <textarea rows="4" cols="50" placeholder="Your Message"
+            class="form-input" name="message" required id="user-message"></textarea>
+          <button type="submit" class="submit">Submit</button>
+          <br>
+          <span class="success"></span>
+          <span class="error"></span>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <div id="project-modal" class="modal hide">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1 class="title"></h1>
+      <p class="team desc-text"></p>
+      <p class="discipline desc-text"></p>
+      <p class="stack desc-text"></p>
+      <p class="libraries desc-text"></p>
+      <p class="software desc-text"></p>
+      <p class="task"></p>
+      <img src="{{projectData.img}}" class="modal-img" alt="">
+    </div>
+  </div>
+</div>
