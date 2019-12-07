@@ -3,10 +3,16 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var favicon = require('serve-favicon');
 
 var indexRouter = require('./routes/index');
 
 var app = express();
+
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
+
 app.use(favicon(path.join(__dirname, 'public', 'images/favicon.ico')))
 
 // view engine setup
