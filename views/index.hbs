@@ -1,7 +1,8 @@
 <div class="grid-x" id="projects">
   <div class="cell">
     <object type="image/svg+xml" data="images/ux.svg"></object>
-    <div class="orbit" role="region" aria-label="Projects" data-orbit data-auto-play="false">
+    <div class="orbit" role="region" aria-label="Projects" data-orbit
+      data-auto-play="false">
       <ul class="orbit-container">
         <button class="orbit-previous" aria-label="previous"><span
             class="show-for-sr">Previous Slide</span>&#9664;</button>
@@ -12,7 +13,12 @@
             <h1>Spotify Infographic</h1>
             <h2>WEB DEVELOPMENT / UX DESIGN</h2>
             <h3>PERSONAL PROJECT</h3>
-            <p class="icons"><i class="devicon-illustrator-plain"></i><i class="devicon-nodejs-plain"></i><i class="devicon-express-original"></i><i class="devicon-mysql-plain-wordmark"></i><i class="devicon-sass-original"></i><i class="devicon-html5-plain-wordmark"></i></p>
+            <p class="icons"><i class="devicon-illustrator-plain"></i><i
+                class="devicon-nodejs-plain"></i><i
+                class="devicon-express-original"></i><i
+                class="devicon-mysql-plain-wordmark"></i><i
+                class="devicon-sass-original"></i><i
+                class="devicon-html5-plain-wordmark"></i></p>
             <span class="call-to-action" data-target="1">View Case Study</span>
           </div>
           <div class="column-right hide-for-small-only">
@@ -45,6 +51,13 @@
         </li>
         <li class="orbit-slide" id="motion">
           <h1 class="motion-heading">MOTION DESIGN REEL</h1>
+          
+            <video controls>
+              <source src="video/motion-reel.mp4" type="video/mp4">
+              <source src="video/motion-reel.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          
         </li>
       </ul>
       <nav class="orbit-bullets">
@@ -62,7 +75,10 @@
     <img class="headshot" src="images/headshot.svg" alt="Liam">
     <h2>Hi, I'm Liam.</h2>
     <hr>
-    <p class="about-text">I'm a 4th year Interactive Media Design student at Fanshawe College. Whether it's Product Design, Web Development, Graphics Design, or even Photography. I've got you covered for your next project. Please do not hesitate to reach out!</p>
+    <p class="about-text">I'm a 4th year Interactive Media Design student at
+      Fanshawe College. Whether it's Product Design, Web Development, Graphics
+      Design, or even Photography. I've got you covered for your next project.
+      Please do not hesitate to reach out!</p>
   </div>
   <div class="cell large-6 columns">
     <h1>Let's Build Something Great</h1>
@@ -72,29 +88,28 @@
     <hr>
 
     <form id="contact-form">
-      
-        <div class="grid-x grid-padding-x">
-          <div class="small-6 cell contact">
-            
-            <input type="text" placeholder="Your Name" class="form-input"
-              required name="name">
 
-            <input type="email" placeholder="Your Email" class="form-input"
-              required name="usermail">
+      <div class="grid-x grid-padding-x">
+        <div class="small-6 cell contact">
 
-            <textarea rows="4" cols="50" placeholder="Your Message"
-              class="form-input" name="message" required id="user-message"></textarea>
+          <input type="text" placeholder="Your Name" class="form-input"
+            required name="name">
 
-            <button type="submit" class="submit">Submit</button>
-            <br>
-            <span class="success"></span>
-            <span class="error"></span>
-          </div>
+          <input type="email" placeholder="Your Email" class="form-input"
+            required name="usermail">
+
+          <textarea rows="4" cols="50" placeholder="Your Message"
+            class="form-input" name="message" required id="user-message"></textarea>
+          <button type="submit" class="submit">Submit</button>
+          <br>
+          <span class="success"></span>
+          <span class="error"></span>
         </div>
-      
+      </div>
+
     </form>
   </div>
-  
+
   <div id="project-modal" class="modal hide">
     <div class="modal-content">
       <span class="close">&times;</span>
