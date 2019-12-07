@@ -25,12 +25,14 @@
 
         modal.classList.remove('hide');
         disableBodyScroll(modal);
+  }
 
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.classList.add('hide');
-            }
-          }
+  window.onclick = function(event) {
+    if (event.target == modal) {
+        const enableBodyScroll = bodyScrollLock.enableBodyScroll;
+        enableBodyScroll(modal);
+        modal.classList.add('hide');
+    }
   }
 
     function fetchData() {
