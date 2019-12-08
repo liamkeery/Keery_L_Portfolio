@@ -19,7 +19,10 @@ router.get('/', function(req, res, next) {
   let query = "SELECT * FROM tbl_projects";
 
     sql.query(query, (err, result) => {
-        if (err) { throw err; console.log(err); }
+        if (err) { 
+			throw err; 
+			console.log(err);
+		}
 
         res.render('index', { projectData: result });
     })
