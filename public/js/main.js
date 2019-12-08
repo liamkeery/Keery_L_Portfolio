@@ -98,7 +98,7 @@
             }) // this will be a success or fail message from the server
             .catch((err) => console.log(err));
 
-            errorMsg.textContent = `Error! Sorry, we could not send your message.`;
+            //errorMsg.textContent = `Error! Sorry, we could not send your message.`;
     }
 
     form.addEventListener('submit', handleMail)
