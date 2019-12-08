@@ -9,7 +9,7 @@
                 <g id="Group-2">
                     <rect id="Rectangle" fill="#525252" x="0" y="0" width="157" height="55"></rect>
                     <polygon id="Path-2" fill="#444444" points="157 0 212 55 157 55"></polygon>
-                    <text id="PROJECTS" font-family="SFProDisplay-BlackItalic, SF Pro Display" font-size="24" font-style="italic" font-weight="700" fill="#FFFFFF">
+                    <text id="PROJECTS" font-family="Montserrat-BlackItalic, Montserrat" font-size="24" font-style="italic" font-weight="700" fill="#FFFFFF">
                         <tspan x="13" y="36">PROJECTS</tspan>
                     </text>
                 </g>

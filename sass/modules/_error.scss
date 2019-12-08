@@ -1,0 +1,26 @@
+.error-text {
+    color: lightcoral;
+    text-align: center;
+}
+
+.go-home {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+}
+
+.go-home:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.error-section {
+    margin-top: 100px;
+}
