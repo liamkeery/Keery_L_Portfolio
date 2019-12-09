@@ -16,6 +16,8 @@ Hosted on Heroku with ClearDB.
 * MySQL
 * Express
 * typer.js
+* gulp
+* gulp-uglify-es
 
 ## Installation locally
 
