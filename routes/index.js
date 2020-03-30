@@ -16,29 +16,61 @@ const transporter = mailer.createTransport({
 
 router.get('/', function(req, res, next) {
   
-  let query = "SELECT * FROM tbl_projects";
+//   let query = "SELECT * FROM tbl_projects";
 
-    sql.query(query, (err, result) => {
-        if (err) { 
-			throw err; 
-			console.log(err);
-		}
+//     sql.query(query, (err, result) => {
+//         if (err) { 
+// 			throw err; 
+// 			console.log(err);
+// 		}
 
-        res.render('index', { projectData: result });
-    })
+        res.render('index'); // { projectData: result }
+    //})
 });
 
-router.get('/project/:target', (req, res) => {
-  let query = `SELECT * FROM tbl_projects WHERE id="${req.params.target}"`;
+router.get('/spotify', function(req, res, next) {
+	res.render('spotify', {layout: false});
+});
 
-  sql.query(query, (err, result) => {
-    if (err) { console.log(err); }
+router.get('/organ-campaign', function(req, res, next) {
+	res.render('organ', {layout: false});
+});
+
+router.get('/peak', function(req, res, next) {
+	res.render('peak', {layout: false});
+});
+
+router.get('/ontario-summer', function(req, res, next) {
+	res.render('ontarioSummer', {layout: false});
+});
+
+router.get('/roku', function(req, res, next) {
+	res.render('roku', {layout: false});
+});
+
+router.get('/chatr', function(req, res, next) {
+	res.render('chatr', {layout: false});
+});
+
+router.get('/vivid', function(req, res, next) {
+	res.render('vivid', {layout: false});
+});
+
+router.get('/housecom', function(req, res, next) {
+	res.render('housecom', {layout: false});
+});
+
+// router.get('/project/:target', (req, res) => {
+//   let query = `SELECT * FROM tbl_projects WHERE id="${req.params.target}"`;
+
+//   sql.query(query, (err, result) => {
+//     if (err) { console.log(err); }
     
-    console.log(result);
+//     console.log(result);
 
-    res.json(result[0]);
-  })
-});
+//     res.json(result[0]);
+//   })
+// });
 
 router.post('/mail', (req, res) => {
 	console.log('hit mail route');

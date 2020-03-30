@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Liam Keery | Spotify Infographic</title>
+    <link rel="stylesheet" href="/css/foundation.css"/>
+    <script src="https://kit.fontawesome.com/5a7dc109cc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="/css/hover.css"/>
+    <link rel='stylesheet' href="/css/main.css"/>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <div class="hero-full-screen">
+
+      <div class="top-content-section">
+        <div class="title-bar" data-responsive-toggle="responsive-menu"
+          data-hide-for="medium">
+          <div class="title-bar-left">
+            <ul class="menu">
+                <li><a href="/#projects"><i class="fas fa-chevron-left"></i></a></li>
+            </ul>
+          </div>
+          {{!-- <div class="title-bar-right">
+            <button class="menu-icon" type="button"
+              data-toggle="responsive-menu"></button>
+          </div> --}}
+        </div>
+
+        <div class="top-bar hide-for-small-only">
+          <div class="top-bar-left" data-sticky-container>
+            <ul class="menu" data-sticky>
+                <li><a href="/#projects"><i class="fas fa-chevron-left"></i></a></li>
+            </ul>
+          </div>
+          {{!-- <div class="top-bar-right" id="responsive-menu">
+            <ul class="menu">
+              <li><a href="/">Home</a></li>
+              <li><a href="#projects">Work</a></li>
+              <li><a href="#about">Contact</a></li>
+            </ul>
+          </div> --}}
+        </div>
+      </div>
+
+      <div class="middle-content-section animated fadeInDown">
+        <h1 class="main-title">Spotify Infographic</h1>
+        <hr class="title-hr">
+        <h2 class="disc">WEB DEVELOPMENT / UX DESIGN</h2>
+        <h3 class="role">PERSONAL PROJECT</h3>
+        <p class="icons"><i class="devicon-illustrator-plain"></i><i
+                class="devicon-nodejs-plain"></i><i
+                class="devicon-express-original"></i><i
+                class="devicon-mysql-plain-wordmark"></i><i
+                class="devicon-sass-original"></i><i
+                class="devicon-html5-plain-wordmark"></i></p>
+                <p>View the Github repo for this project <a class="repo" href="https://github.com/lkeery/Keery_Liam_InteractiveSVG">here</a>.</p>
+      </div>
+
+      <div class="bottom-content-section" data-magellan data-threshold="0">
+        <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24" viewBox="0 0 24 24"><path d="M24
+              12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373
+              12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416
+              1.414-5.995 5.988-6.005-5.988z" /></svg></a>
+        </div>
+      </div>
+
+      <div id="main-content-section" data-magellan-target="main-content-section" class="grid-container full">
+
+           <img src="images/spotify-mockup.png" alt="Spotify Infographic">
+    <h1 class="heading">Overview</h1>
+    <hr class="heading-hr">
+    <p class="overview-text"><b>TEAM:</b> Personal</p>
+    <p class="overview-text"><b>DISCIPLINE:</b> UX/UI Design / Web Development</p>
+    <p class="overview-text"><b>STACK:</b> node.js, express.js, MySQL</p>
+    <p class="overview-text"><b>LIBRARIES:</b> animate.css, vivus.js, waypoints.js, Foundation 6</p>
+    <p class="overview-text"><b>SOFTWARE:</b> Adobe Illustrator, Visual Studio Code</p>
+
+    <h1 class="heading">The Task</h1>
+    <hr class="heading-hr">
+    <p class="text">For this project, we were tasked with collecting data on a topic of our choice and creating an interactive infographic in the form of a web application. Given my background in music, I decided to use Spotify streaming data to create an infographic that displayed the top 10 most streamed songs on the Spotify platform. This project was meant to test our ability to deliver a functional web application with UX considerations. My role in this project was both the designer and the developer.</p>
+
+    <h1 class="heading">The Design</h1>
+    <hr class="heading-hr">
+    <p class="text">I began by sourcing Spotify’s branding guidelines to make note of their brands colors and source the necessary logo assets that I would need in the design. I wanted to ensure that the UI was consistent with Spotify’s brand so that the user could make the connection that the information on the page was associated with Spotify, and not another streaming platform.</p>
+    <img src="images/spotify-colors.svg" alt="Spotify Brand Colors" class="colors">
+    <p class="text">For the type, I chose the Haettenschweiler font paired with Avenir Next Condensed. I wanted a strong, impactful heading font that would communicate a clear hierarchy when displaying the data. Therefore, I used Haettenschweiller for the stream count since the users focus should be directed to the number of streams per song.</p>
+    <img src="images/type.png" alt="Haettenschweiller Font" class="type">
+    <img src="images/type-2.png" alt="Avenir Next Condensed" class="type">
+    <p class="text">
+        The next step in my design process was to determine the proper layout of the data. I chose a timeline approach where the most streamed song appeared at the top of the page, all the way to the 10th song at the bottom. For interactivity, I added a play button that connected to each song so that when clicked, the user would be able to hear the song. To make it more informative, I figured out how many artists had more than one song in the top 10, and added that statistic at the bottom so that it appeared when the user was done viewing the song data.
+        <br>
+        <br>
+        In order to avoid confusing the user, each song and its corresponding information was animated to display when the respective play button was pressed. In addition, the connecting line between songs was animated on page load to provide the user with a hint of direction that indicated that they should scroll down the page to continue.
+        <br>
+        <br>
+        Once the user hits the bottom, they are presented with two buttons. One, to stop the audio, and the second to lead them back to the top the page for ease of control and navigation.
+    </p>
+
+    <h1 class="heading">The Design</h1>
+    <hr class="heading-hr">
+    <img src="images/interactive-infographic.png">
+
+    <footer class="cell">
+          <p class="footer-text">
+            Copyright &copy; 2019 Liam Keery.
+          </p>
+          <hr>
+          <nav class="footer-nav">
+          <ul class="menu align-center">
+              <li><a href="/">Home</a></li>
+              <li><a href="/#projects">Work</a></li>
+              <li><a href="/includes/Liam-Keery-Resume.pdf" download>CV</a></li>
+              <li><a href="/#about">Contact</a></li>
+            </ul>
+            </nav>
+          </footer>
+      </div>
+
+   
+
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/body-scroll-lock@2.6.4/lib/bodyScrollLock.min.js"></script>
+    <script src="dist/js/vendor/jquery.js"></script>
+    <script src="dist/js/vendor/what-input.js"></script>
+    <script src="dist/js/vendor/foundation.js"></script>
+    <script src="dist/js/app.js"></script>
+    <script type="module" src="dist/js/main.js"></script>
+</body>
+</html>

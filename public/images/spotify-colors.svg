@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1090px" height="166px" viewBox="0 0 1090 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-175.000000, -3778.000000)">
+            <g id="Group" transform="translate(175.000000, 3778.000000)">
+                <circle id="Oval" fill="#1DB954" cx="83" cy="83" r="83"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="457" cy="83" r="83"></circle>
+                <circle id="Oval" fill="#000000" cx="839" cy="83" r="83"></circle>
+                <text id="Spotify-Green" font-family="OpenSans-Semibold, Open Sans" font-size="21" font-weight="500" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="196.239619" y="34">Spotify Green</tspan>
+                </text>
+                <text id="#1DB954" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="196.767021" y="72">#1DB954</tspan>
+                </text>
+                <text id="R30-G215-B96" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="196.424443" y="110">R30 G215 B96</tspan>
+                </text>
+                <text id="C80-M0-Y80-K0" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="197.027461" y="148">C80 M0 Y80 K0</tspan>
+                </text>
+                <text id="White" font-family="OpenSans-Semibold, Open Sans" font-size="21" font-weight="500" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="570.028271" y="34">White</tspan>
+                </text>
+                <text id="#FFFFFF" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="570.114189" y="72">#FFFFFF</tspan>
+                </text>
+                <text id="R255-G255-B255" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="570.229111" y="110">R255 G255 B255</tspan>
+                </text>
+                <text id="C0-M0-Y0-K0" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="570.222793" y="148">C0 M0 Y0 K0</tspan>
+                </text>
+                <text id="Black" font-family="OpenSans-Semibold, Open Sans" font-size="21" font-weight="500" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="952.076367" y="34">Black</tspan>
+                </text>
+                <text id="#000000" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="952.276787" y="72">#000000</tspan>
+                </text>
+                <text id="R25-G20-B20" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="952.272109" y="110">R25 G20 B20</tspan>
+                </text>
+                <text id="C0-M0-Y0-K100" font-family="OpenSans-Light, Open Sans" font-size="21" font-weight="300" letter-spacing="-0.291484375" fill="#FFFFFF">
+                    <tspan x="952.027461" y="148">C0 M0 Y0 K100</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

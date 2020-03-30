@@ -1,0 +1,87 @@
+@import '_vars';
+
+.main-title {
+    color: white;
+    font-family: $montserrat;
+    text-align: center;
+}
+
+.heading {
+    color: white;
+    font-family: $montserrat;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.disc {
+    font-family: $roboto;
+    color: $white;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.role {
+    font-family: $montserrat;
+    color: $white;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.overview-text {
+    font-family: $montserrat;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.title-hr {
+    border: 2px solid #D8AA19;
+    width: 25%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading-hr {
+    border: 2px solid #D8AA19;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 50px;
+}
+
+.text {
+    color: white;
+    font-family: $montserrat;
+    max-width: 1000px;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: auto;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.colors {
+    margin-bottom: 40px;
+    max-width: 75%;
+}
+
+.type {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 75%;
+}
+
+.repo {
+    text-decoration: underline;
+}
