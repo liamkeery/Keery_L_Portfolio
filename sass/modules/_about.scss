@@ -47,6 +47,7 @@ form {
 
 .contact {
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .form-input {
@@ -67,4 +68,16 @@ form {
     font-family: $montserrat;
     padding: 15px;
     margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+   #about h2 {
+       font-size: 2rem;
+   }
+
+   #about h1 {
+       font-size: 2rem;
+   }
 }

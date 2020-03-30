@@ -1,8 +1,8 @@
 const config = {
-    host: "us-cdbr-iron-east-05.cleardb.net", //localhost
+    host: "localhost", //localhost us-cdbr-iron-east-05.cleardb.net
     uname: process.env.UNAME, // root
     pword: process.env.PWORD, // root
-    database: "heroku_96ca2404358326c"
+    database: "db_portfolio" // heroku_96ca2404358326c
 }
 
 module.exports = config;
