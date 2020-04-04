@@ -69,3 +69,18 @@ $hero-full-screen-text-color: $white;
     cursor: pointer;
 }
 
+@media screen and (max-width: 39.9375em) {
+  .hello {
+    font-size: 3rem;
+  }
+
+  .tagline {
+    font-size: 1.3rem;
+  }
+
+  .typer {
+    font-size: 1.3rem;
+  }
+}
+
+
