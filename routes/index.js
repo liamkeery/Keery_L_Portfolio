@@ -60,6 +60,10 @@ router.get('/housecom', function(req, res, next) {
 	res.render('housecom', {layout: false});
 });
 
+router.get('/sportchek', function(req, res, next) {
+	res.render('sportchek', {layout: false});
+});
+
 // router.get('/project/:target', (req, res) => {
 //   let query = `SELECT * FROM tbl_projects WHERE id="${req.params.target}"`;
 

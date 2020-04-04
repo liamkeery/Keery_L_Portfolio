@@ -79,5 +79,17 @@ form {
 
    #about h1 {
        font-size: 2rem;
+       margin-top: 40px;
+   }
+
+   #about {
+       .about-text {
+           width: 300px;
+       }
+
+       .contact-text {
+        width: 300px;
+        margin: 0 auto;
+    }
    }
 }

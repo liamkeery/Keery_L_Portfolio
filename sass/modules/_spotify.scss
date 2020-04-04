@@ -85,3 +85,9 @@ img {
 .repo {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 39.9375em) { 
+    .heading {
+        font-size: 2rem;
+    }
+}
