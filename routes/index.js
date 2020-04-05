@@ -7,7 +7,7 @@ var auth = require('../config/mailcreds');
 const sql = require('../utils/sql');
 
 const transporter = mailer.createTransport({
-	service: 'gmail',
+	service: 'Outlook365',
 	auth: {
 		user: auth.user,
 		pass: auth.pass
