@@ -83,7 +83,7 @@ router.post('/mail', (req, res) => {
 	// get the mail options from the form -> the url params using bodyParser middleware
 
 	const mailOptions = {
-		from: req.body.usermail,
+		from: auth.user,
 		to: auth.user,
 		replyTo: req.body.usermail,
 		subject: `CONTACT REQUEST FROM PORTFOLIO: ${req.body.name || 'none'}`, // Subject line
