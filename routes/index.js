@@ -64,6 +64,26 @@ router.get('/sportchek', function(req, res, next) {
 	res.render('sportchek', {layout: false});
 });
 
+router.get('/inkvenues', function(req, res, next) {
+	res.render('inkvenues', {layout: false});
+});
+
+router.get('/ippolito-produce', function(req, res, next) {
+	res.render('ippolitoProduce', {layout: false});
+});
+
+router.get('/ippolito-transportation', function(req, res, next) {
+	res.render('ippolitoTransportation', {layout: false});
+});
+
+router.get('/toybox', function(req, res, next) {
+	res.render('factoryFridays', {layout: false});
+});
+
+router.get('/rbc-expand', function(req, res, next) {
+	res.render('rbcExpand', {layout: false});
+});
+
 // router.get('/project/:target', (req, res) => {
 //   let query = `SELECT * FROM tbl_projects WHERE id="${req.params.target}"`;
 
